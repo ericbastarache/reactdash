@@ -11,9 +11,9 @@ class Main extends Component{
           </div>
         </div>
         <div className="row">
-          <Card cardHeader="Simple"/>
-          <Card cardHeader="Fast"/>
-          <Card cardHeader="Reliable"/>
+          <Card cardHeader="Simple" cardDescription="asd"/>
+          <Card cardHeader="Fast" cardDescription="fgh"/>
+          <Card cardHeader="Reliable" cardDescription="jkl"/>
         </div>
       </div>
     );
