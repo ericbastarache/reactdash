@@ -3,6 +3,10 @@ footer.footer {
   bottom: 0;
   height: 60px;
   width: 100%;
-  background-color: #2a2a2a;
+  background-color: #252525;
   color: #fff;
+}
+
+p {
+  margin-top: 20px;
 }
