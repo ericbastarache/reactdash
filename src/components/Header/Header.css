@@ -1,0 +1,22 @@
+nav.navbar-dash {
+  background-color: #252525;
+  border-radius: 0;
+}
+
+a.navbar-brand {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+ul.navbar-nav li a {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+ul.navbar-nav li a:hover {
+  background: transparent;
+}
+
+ul.navbar-nav li a:focus {
+  background: transparent;
+}
