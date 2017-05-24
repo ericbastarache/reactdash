@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Main from './components/Main/Main';
+import MainRoutes from './components/MainRoutes/MainRoutes';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <Router>
+        <div>
         <Header />
-          <Main />
+          <MainRoutes />
         <Footer />
-      </div>
+        </div>
+      </Router>
     );
   }
 }
