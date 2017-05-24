@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import './Main.css';
 import Card from '../../components/Card/Card';
 import Button from '../../components/Button/Button';
-import { Link } from 'react-router-dom';
 
-class Main extends Component{
+class Main extends Component {
   render () {
     return (
       <div>
