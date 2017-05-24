@@ -1,0 +1,29 @@
+button {
+  margin-right: 25px;
+}
+
+button.interesting {
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: #252525;
+}
+
+button.interesting:hover {
+  background-color: #1a1a1a;
+  transition: 0.5s ease-in-out;
+}
+
+button.show-content {
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: #bf0000;
+}
+
+button.show-content:hover {
+  background-color: #9f0000;
+  transition: 0.5s ease-in-out;
+}
