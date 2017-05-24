@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Main.css';
 import Card from '../../components/Card/Card';
 import Button from '../../components/Button/Button';
+import { Link } from 'react-router-dom';
 
 class Main extends Component{
   render () {
@@ -22,10 +23,12 @@ class Main extends Component{
           </div>
         </section>
         <section className="button-holder">
+          <h1 className="text-center">Interesting buttons</h1>
           <div className="container">
             <div className="row">
               <Button buttonClassName="interesting" buttonText="Click Me!"/>
-              <Button buttonClassName="show-content" buttonText="Interesting Content..." />
+              <Button buttonClassName="show-content" buttonText="Show Me Something" />
+              <Button buttonClassName="interesting" buttonText="Redirect to About"/>
             </div>
           </div>
         </section>
