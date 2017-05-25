@@ -10,9 +10,9 @@ class App extends Component {
     return (
       <Router>
         <div>
-        <Header />
+        <Header brandText="React Dashboard" />
           <MainRoutes />
-        <Footer />
+        <Footer footerText="Copyright Eric Bastarache 2017" />
         </div>
       </Router>
     );
