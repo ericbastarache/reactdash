@@ -1,13 +1,13 @@
 import React from 'react';
 import './Footer.css';
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <footer className="footer">
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <p className="text-center">Copyright Eric Bastarache 2017</p>
+            <p className="text-center">{props.footerText}</p>
           </div>
         </div>
       </div>
