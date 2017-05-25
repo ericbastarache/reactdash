@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <nav className="navbar navbar-dash">
       <div className="container-fluid">
@@ -13,7 +13,7 @@ const Header = () => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <Link className="navbar-brand" to="/">React Dashboard</Link>
+          <Link className="navbar-brand" to="/">{props.brandText}</Link>
         </div>
 
         <div className="collapse navbar-collapse" id="navbar">
