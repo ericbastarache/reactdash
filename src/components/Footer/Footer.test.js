@@ -25,4 +25,9 @@ describe("Footer", () => {
     const paragraph = footer().find("p");
     expect(paragraph.length).toBe(1);
   });
+
+  it("has content", () => {
+    const foot = mount(<Footer footerText={"Copyright Eric Bastarache 2017"} />)
+    expect(foot.props().footerText).toBe("Copyright Eric Bastarache 2017");
+  });
 })
