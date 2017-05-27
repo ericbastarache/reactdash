@@ -2,13 +2,23 @@ import React, { Component } from 'react';
 import './Login.css';
 
 class Login extends Component {
-
-  handleChange () {
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: '',
+      password: ''
+    }
   }
 
-  handleSubmit () {
+  handleChange (e) {
+    this.setState({
+      [e.target.name] : e.target.value
+    });
+  }
 
+  handleSubmit (e) {
+    e.preventDefault();
+    console.log(this.state);
   }
 
   render () {
