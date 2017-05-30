@@ -2,6 +2,14 @@ button {
   margin-right: 25px;
 }
 
+button:focus {
+  outline: none;
+}
+
+button:active {
+  outline: none;
+}
+
 button.interesting {
   padding: 10px;
   color: #fff;
