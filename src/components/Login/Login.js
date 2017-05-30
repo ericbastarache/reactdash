@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import InputField from '../InputField/InputField';
 import './Login.css';
 
 class Login extends Component {
@@ -10,13 +11,13 @@ class Login extends Component {
     }
   }
 
-  handleChange (e) {
+  handleChange = (e) => {
     this.setState({
       [e.target.name] : e.target.value
     });
   }
 
-  handleSubmit (e) {
+  handleSubmit = (e) => {
     e.preventDefault();
     console.log(this.state);
   }
@@ -31,11 +32,11 @@ class Login extends Component {
               <form onSubmit={this.handleSubmit} className="form-horizontal">
                 <div className="form-group">
                   <label htmlFor="username">Username: </label>
-                  <input name="username" className="form-control" type="text" onChange={this.handleChange} />
+                  <InputField name="username" type="text" className="form-control" onChange={this.handleChange} placeholder="Enter your username" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="password">Password: </label>
-                  <input name="password" type="password" className="form-control" onChange={this.handleChange} />
+                  <InputField name="password" type="password" className="form-control" placeholder="Enter your password" onChange={this.handleChange} />
                 </div>
                 <div className="form-group">
                   <button className="btn btn-primary">Sign In</button>
