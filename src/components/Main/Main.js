@@ -16,7 +16,7 @@ class Main extends Component {
               </div>
             </div>
             <div className="row">
-              <Card cardHeader="Simple" cardDescription="React Dash gives you valuable insights into who's doing what on your website."/>
+              <Card cardHeader="Simple" cardDescription="React Dash gives you valuable insights into who is doing what on your website."/>
               <Card cardHeader="Fast" cardDescription="With no page reloads, you can get realtime information as fast as you need it"/>
               <Card cardHeader="Reliable" cardDescription="React Dash is operational as long as you have an internet connection"/>
             </div>
@@ -32,7 +32,7 @@ class Main extends Component {
             </div>
           </div>
         </section>
-    </div>
+      </div>
     );
   }
 }
