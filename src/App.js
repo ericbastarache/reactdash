@@ -6,6 +6,26 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      users: [],
+      error: null
+    }
+  }
+
+  componentDidMount = () => {
+    this.ws = new WebSocket("ws://localhost:8080")
+    this.ws.onmessage = e => this.setState({ users: Object.values(JSON.parse(e.data)) });
+    this.ws.onerror = e => this.setState({ error: 'Websocket error' });
+    this.ws.onclose = e => !e.wasClean && this.setState({ error: `Websocket error: ${e.code} ${e.reason}` });
+  }
+
+  componentWillUnmount = () => {
+    this.ws.close();
+  }
+
   render() {
     return (
       <Router>
