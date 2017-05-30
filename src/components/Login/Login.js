@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import InputField from '../InputField/InputField';
+import Button from '../Button/Button';
 import './Login.css';
 
 class Login extends Component {
@@ -39,7 +40,7 @@ class Login extends Component {
                   <InputField name="password" type="password" className="form-control" placeholder="Enter your password" onChange={this.handleChange} />
                 </div>
                 <div className="form-group">
-                  <button className="btn btn-primary">Sign In</button>
+                  <Button buttonClassName="btn btn-primary" buttonText="Sign In" />
                 </div>
               </form>
             </div>
