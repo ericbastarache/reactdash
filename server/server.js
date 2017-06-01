@@ -15,3 +15,7 @@ let config = {
 
 app.disable('x-powered-by');
 server.listen(config.port);
+
+let users = {};
+let userCount = 0;
+let userLastId = 0;
