@@ -13,6 +13,7 @@ class Main extends Component {
             <div className="row">
               <div className="col-md-12">
                 <h1 className="text-center">React Dashboard</h1>
+                <h3 className="text-center">For best results have admin dashboard open in another tab/window</h3>
               </div>
             </div>
             <div className="row">
