@@ -45,6 +45,13 @@ class Login extends Component {
             </div>
           </div>
         </div>
+        <div className="row">
+          <div className="col-md-6 col-md-offset-4">
+            <h2 className="text-center">Dummy credentials</h2>
+            <h4 className="text-center">Username: admin</h4>
+            <h4 className="text-center">Password: admin1234</h4>
+          </div>
+        </div>
       </div>
     );
   }
