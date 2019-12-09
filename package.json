@@ -11,7 +11,7 @@
     "react-router-dom": "^4.1.1",
     "redux": "^3.6.0",
     "useragent": "^2.1.13",
-    "ws": "^3.0.0"
+    "ws": "^3.3.1"
   },
   "devDependencies": {
     "enzyme": "^2.8.2",
